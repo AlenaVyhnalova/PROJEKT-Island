@@ -9,8 +9,8 @@ html { box-sizing: border-box; }
 	Jedeme retro černobíle (až na tu modrou), dnes další barvy nepotřebujeme.
 
 	FONTY
-	Merriweather		základní font na stránce
-	Raleway					nadpisy a menu
+	Merriweather			základní font na stránce
+	Raleway					nadpisy a menu 
 	Oba fonty jsou dostupné na Google Fonts.
 */
 
@@ -20,5 +20,111 @@ body {
 	background-color: #f5f5f5;
 	font-size: 16px;
 	line-height: 1.6;
+	font-family: 'Merriweather', serif;
 }
 
+.header {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 20px;
+	background-image: url(images/island-hlavicka.jpg);
+	background-size: cover;
+}
+
+.header__title {
+	font-size: 48px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.header__subtext::before {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 1px;
+	background-color: white;
+	margin: 30px auto 15px auto;
+}
+
+.header__subtext {
+	color: rgba(255, 255, 255, 0.738);
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.menu {
+	text-align: center;
+	text-transform: uppercase;
+	list-style: none;
+	font-family: 'Raleway', sans-serif;
+	padding: 0;
+	margin: 20px;
+}
+
+.menu__item {
+	text-decoration: none;
+	color: grey;
+	line-height: 2;
+}
+
+.menu__item::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 0.2px;
+	background-color: rgba(229, 229, 229, 0.814);
+	margin: 0 auto;
+}
+
+.main__text {
+	padding: 20px;
+}
+
+.main__title {
+	font-family: 'Raleway', sans-serif;
+	padding: 20px;
+}
+
+.main__title h2 {
+	margin: 0;
+}
+
+.main__title::after {
+	content: "";
+	display: block;
+	width: 70px;
+	height: 5px;
+	background-color: #629fe0;
+	margin-top: 20px;
+	margin-left: -20px;
+}
+
+.photo {
+	width: 100%;
+}
+
+.photo__text, .photo__link {
+	text-align: center;
+	color: grey;
+	font-size: 12px;
+	margin: 0;
+}
+
+.gallery__item {
+	margin-bottom: 20px;
+}
+
+.footer {
+	background-image: linear-gradient(lightgrey, #f5f5f5, #f5f5f5);
+	padding: 20px;
+}
+
+.footer__text {
+	color: grey;
+	font-size: 12px;
+}
+
+.footer__link {
+	color: grey;
+}
