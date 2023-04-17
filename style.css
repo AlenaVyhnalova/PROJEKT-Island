@@ -77,6 +77,20 @@ body {
 	margin: 0 auto;
 }
 
+@media screen and (min-width: 540px) {
+	.menu {
+		display: flex;
+		justify-content: space-around;
+		border-top: rgba(229, 229, 229, 0.814) 0.2px solid;
+		border-bottom: rgba(229, 229, 229, 0.814) 0.2px solid;
+		margin-top: 30px;
+	}
+
+	.menu__item::after {
+		display: none;
+	}
+}
+
 .main__text {
 	padding: 20px;
 }
@@ -113,6 +127,13 @@ body {
 
 .gallery__item {
 	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 540px) {
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 .footer {
